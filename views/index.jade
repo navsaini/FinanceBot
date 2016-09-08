@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+script(src='https://www.gstatic.com/firebasejs/3.3.0/firebase.js')
+script.
+  // Initialize Firebase
+  var config = {
+  apiKey: "AIzaSyCH7-AA5xkcl6Rn8A-6bjiE-Js48Oe-Apo",
+  authDomain: "financebot-a3637.firebaseapp.com",
+  databaseURL: "https://financebot-a3637.firebaseio.com",
+  storageBucket: "",
+  };
+  firebase.initializeApp(config);
