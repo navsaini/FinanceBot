@@ -14,13 +14,6 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/finance');
 
-function test() {
-	var x = new User({phoneNumber: 123456789, profit: 0, pricesWhenBought: {"hello": "lol"}, pricesNow: {"lol": "lmao"}});
-	x.save(function(err, x) {
-		if (err) return console.error(err);
-		console.log(x);
-	});
-}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
